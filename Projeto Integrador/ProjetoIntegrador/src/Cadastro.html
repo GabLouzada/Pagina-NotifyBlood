@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/popper.min.js'></script>
+   <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js'></script>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Cadastro</title>
+
+</head>
+<body style="overflow: hidden;">
+<body style="overflow: hidden; display: flex; justify-content: center; align-items: center; height: 100vh;">
+   <div class="logo-container">
+<img src="C:\Users\gabri\OneDrive\Área de Trabalho\PROJETOS\OIG-removebg-preview (1).png" alt="Logomarca" id="logomarca">
+
+<style>
+ #logomarca {
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    width: 80px; 
+    
+  }
+
+
+body {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh;
+   font-size: 20px;
+ }
+ 
+ .centered-content {
+    text-align: center;
+  }
+
+ .modal-body {
+   display: flex;
+   padding: 0;
+   border-radius: 4rem;
+   font-family: 'PT Sans', sans-serif;
+ }
+ 
+ .modal-content {
+   border-radius: 4rem;
+   width: 140%;
+   -webkit-box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+ -moz-box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+ box-shadow: -1px -2px 42px -19px rgba(0,0,0,0.74);
+ }
+ .modal-content h1, .modal-content h2, .modal-content h3 {
+     text-align: center;
+ }
+ .modal-content h1 {
+   font-size: 1.3em;
+   text-transform: uppercase;
+ }
+ 
+ .modal-content h2 {
+     font-size: 1.1em;
+ }
+ .modal-content h3 {
+   font-size: .8em;
+   letter-spacing: 2px;
+ }
+ form {
+     font-size: .8em;
+ }
+ .column {
+   flex: 50%;
+   padding: 10px;
+ }
+ 
+ .column#main {
+   flex: 75%;
+   padding: 50px;
+   margin-top: 30px;
+   margin-left: 15px;
+ }
+ 
+ #secondary {
+   background-color: #F9BC35;
+   border-radius: 0 4rem 4rem 0;
+   text-align: center;
+ }
+ 
+ #main .form-control {
+   border-radius: 0;
+   font-size: .9em;
+ }
+ 
+ .btn {
+   text-transform: uppercase;
+   border-radius: .15rem;
+   width: 200px;
+   padding: .150rem .75rem;
+   margin: 30px auto;
+   font-family: 'PT Sans', sans-serif;
+   letter-spacing: 2px;
+ }
+ 
+ .btn-primary {
+   border-color: rgba( 255, 255, 255, 0);
+   background: #f1da36; /* Old browsers */
+ background: -moz-linear-gradient(left, #f1da36 0%, #fca86c 99%); /* FF3.6-15 */
+ background: -webkit-linear-gradient(left, #f1da36 0%,#fca86c 99%); /* Chrome10-25,Safari5.1-6 */
+ background: linear-gradient(to right, #f1da36 0%,#fca86c 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColors='#f1da36', endColors='#fca86c',GradientType=1 ); /* IE6-9 */
+ }
+ 
+ .btn-primary:hover {
+   border-color: rgba( 255, 255, 255, 0);
+ }
+ 
+ #main .btn-primary {
+   width: 100%;
+ }
+ #secondary .btn-primary {
+   background: #f8f9fa4f;
+   color: #000;
+ }
+ .modal-body label {
+   margin-bottom: 0;
+ }
+ 
+ .sec-content {
+   margin-top: 85%;
+ }
+ </style>
+
+
+<body style="overflow: hidden;">
+   <div class="centered-content">
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#exampleModal" style="margin-top: 50 vh;">
+   Cadastre-se
+ </button>
+ 
+ <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+     <div class="modal-content">
+       <div class="modal-body">
+         <div class="column" id="main">
+           <h1>Cadastro</h1>
+           <h3>Você está a um passo de fazer a diferença!</h3>
+           <form>
+             <div class="form-group">
+               <label for="exampleInputNome">Nome</label>
+               <input type="nome" class="form-control" id="exampleInputNome" placeholder="Nome Completo">
+             </div>
+             <div class="form-group">
+               <label for="exampleInputEmail1">E-mail </label>
+               <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="E-mail">
+             </div>
+             <div class="form-group">
+   <label for="exampleInputTelefone">Telefone</label>
+   <input type="tel" class="form-control" id="exampleInputTelefone" placeholder="Telefone">
+ </div>
+         <div class="form-group">
+   <label for="exampleInputIdade">Idade</label>
+   <select class="form-control" id="exampleInputIdade">
+     <!-- A opção "Selecione uma idade" deve aparecer apenas uma vez -->
+     <option value="">Selecione uma idade</option>
+     <!-- Usar JavaScript para gerar as opções de idade de 0 a 100 -->
+   </select>
+ </div>
+ 
+ <script>
+   var select = document.getElementById("exampleInputIdade");
+ 
+   for (var idade = 0; idade <= 100; idade++) {
+     var option = document.createElement("option");
+     option.text = idade;
+     option.value = idade;
+     select.add(option);
+   }
+ </script>
+ <div class="form-group">
+   <label for="exampleInputTipoSanguineo">Tipo Sanguíneo</label>
+   <select class="form-control" id="exampleInputTipoSanguineo">
+     <option value="">Selecione um tipo sanguíneo</option>
+     <option value="A+">A+</option>
+     <option value="A-">A-</option>
+     <option value="B+">B+</option>
+     <option value="B-">B-</option>
+     <option value="AB+">AB+</option>
+     <option value="AB-">AB-</option>
+     <option value="O+">O+</option>
+     <option value="O-">O-</option>
+   </select>
+</div>
+             <div class="form-group">
+               <label for="exampleInputSenha1">Senha</label>
+               <input type="senha" class="form-control" id="exampleInputSenha1" placeholder="Senha">
+             </div>
+             <button type="submit" class="btn btn-primary">Registrar</button>
+           </form>
+         </div>
+         
+         <div class="column" id="secondary">
+           <div class="sec-content">
+             <h2>Sua participação é apreciada!</h2>
+             <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+ </div>
+</body>
+</html>
